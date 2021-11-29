@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.Page {
+  background:#fff;
+}
+.PageHeader{
+  display:flex;
+  background-color: rgb(244, 246, 248);
+  border:1px solid #dee2e6;
+  padding:10px 15px;
+  margin: 15px 0;
+  border-radius:3px;
+}
+.PageHeader h1{
+  font-size:29px;
+}
+.PageHero{
+  display:flex;
+  flex-direction:column;
+  padding:30px 15px;
+  background:rgb(197, 177, 80,36%);
+  text-align:center;
+}
+.PageHero p{
+  font-weight:600;
+  color:rgb(0, 171, 85);
+}
+.PageHero h5{
+  font-weight:500;
+  color:#3f51b5;
+}
+.PageHero h3{
+  font-weight:700;
+  color:#f50057;
+}
+.PageHero h1{
+  font-weight:400;
+  color:rgb(0, 171, 85);
+}
+.PageHero h1 span:first-child{
+  color:blue;
+}
+.PageHero h1 span:last-child{
+  color: black;
+}
+
+.CustomCol{
+  margin-bottom: 0;
+}
+.CustomCard{
+  text-align:center;
+}
+
+@media(max-width:480px){
+  .CustomCard{
+    min-height: 280px;
+    box-shadow:0px 1px 1px #ddd;
+  }
+}
+.CustomCardImage{
+  height:180px;
+  cursor: pointer;
+}
+@media(max-width:480px){
+  .CustomCardImage{
+    height:120px;
+  }
+}
+.CustomTable{
+  text-align:center;
+}
+.CustomTable > thead>tr>th{
+  font-size:12px;
+  background-color: rgb(244, 246, 248);
+  color:red;
+  word-break: break-word;
+}
+.CustomTable > tbody>tr>td{
+  font-size:12px;
+  background-color: #fff;
+}
+.CustomTable > tbody>tr>td:first-child{
+  width:50px;
+  font-size:12px;
+  font-weight:700;
+  background-color: rgb(244, 246, 248);
+  color:red;
+  text-overflow:hidden;
+  white-space:nowrap;
+}
+/*Result CSS*/
+.CustomResultTable > thead>tr>th{
+  font-size:12px;
+  background-color: rgb(244, 246, 248);
+  word-break: break-word;
+  text-align:center;
+}
+.CustomResultTable > tbody>tr>td{
+  font-size:12px;
+  background-color: #fff;
+  text-align:center;
+}
+.CustomResultTable > tbody>tr>td:first-child{
+  font-size:12px;
+  font-weight:700;
+  text-overflow:hidden;
+  white-space:nowrap;
+}
+.CardTime{
+  color:red;
+  margin-bottom:0px;
+}
+.CardNumber{
+  color:red;
+}
+.PageFooter{
+  background:#f50057;
+  padding: 10px 0;
+  text-align:center;
+  margin-top:50px;
+}
+.PageFooter h5{
+  font-size:13px;
+  color:white;
+}
+.PageFooter p{
+  font-size:12px;
+  color:white;
+}
+
+@media(min-width:991px){
+  .ButtonResult{
+    font-weight:800;
+    width:200px;
+  }
+}
+.CustomCardBody{
+  background:#f9f9e1;
+  padding: 1rem 0rem 0rem 0rem!important;
+}
+.BlackCards{
+  display:block;
+  width:100%;
+  background:#000000;
+  margin:25px 0 15px 0;
+  padding:15px;
+  border-radius:10px;
+  border:7px dashed yellow;
+  text-align:center;
+}
+.BlackCards h1{
+  font-size:50px;
+  font-weight:700;
+  color:#ffffff;
+}
+.BlackCards h1 span{
+ display:block;
+ font-weight:normal;
+}
+.BlackCards h1 i{
+  display:block;
+  font-size:21px;
+  font-weight:normal;
+  }
+.BlackCards h1 span.color{
+  color:yellow;
+}
+
+.NoGutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* .NoGutterContainer {
+  padding-left:0!important;
+  padding-right:0!important;
+} */
+.TextAlignLeft{
+  text-align: left!important;
+}
+
+.TextAlignCenter{
+  text-align: center!important;
+}
+.CustomDate{
+  width:100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  border:1px solid #dee2e6;
+  padding: .375rem .5rem .375rem .75rem;
+  border-radius:3px;
+}
+
+.CustomDate:focus{
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.CustomImg{
+  width: 150px;
+  height: auto;
+}
+@media(max-width:480px){
+  .CardButtons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.BlinkText {
+  font-weight:800;
+  animation: blinker 1s linear infinite;
+}
+.SetPositionRelative {
+  position:relative
+}
+.FadeNumber {
+  font-weight:800;
+  animation: blinker 1s linear 1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Form*/
+.CustomLabel {
+  font-size: 17px;
+  font-weight: bold;
+}
+/*Tabs*/
+.CustomTab {
+  margin-top:30px;
+  justify-content:left;
+}
+
+.CustomTab li button{
+  font-size:20px;
+  font-weight:600;
+  background:red;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes FadeNumber {
+  50% {
+    opacity: 0;
+  }
+}
